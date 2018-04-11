@@ -1,0 +1,15 @@
+CDC
+Câblages
+Cout
+Algorigramme (résumé le fonctionnement du code)
+Diagramme bloc interne et Algorigramme
+Programme commenté
+Procédure suivie (test, mesures)
+Conclusion (cahier des charges validés)
+
+lire le port serie x) 
+
+Faire un site web responcive sans faille XSS et resfresh avec de l'ajax 
+
+hotspot WIFI avec portail captif à la connection sur le serveur web à
+une page d'acceuille et avec un nom de domaine
