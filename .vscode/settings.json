@@ -1,3 +1,4 @@
 {
-    "javascript.nameSuggestions": true
+    "javascript.nameSuggestions": true,
+    "editor.fontSize": 18
 }
