@@ -6,7 +6,7 @@
     <link rel="icon" type="image/png" href="css/img/header.png"> 
     <title>Ruche</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link href="css/Dashbord.css" type="text/css" rel="stylesheet">
+    <link href="css/dashbord.css" type="text/css" rel="stylesheet">
     <script src="script/main.js"></script>
 </head>
 

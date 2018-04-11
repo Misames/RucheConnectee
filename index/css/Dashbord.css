@@ -2,11 +2,6 @@ body {
     margin: 0;
     padding: 0;
     display: flex;
-    
-}
-p::selection {
-    background-color: rgb(0, 0, 0);
-    color: white;
 }
 
 .nav {
@@ -25,9 +20,10 @@ p::selection {
 }
 
 .box::selection {
-    color: red; 
+    color: red;
     background: yellow;
 }
+
 .box {
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', 'sans-serif';
     display: flex;
@@ -37,9 +33,10 @@ p::selection {
     height: 100vh;
     width: 1620px;
     order: 2;
-    
 }
-.titre, .histo {
+
+.titre,
+.histo {
     border: 5px solid black;
     border-radius: 20px;
 }
@@ -51,7 +48,7 @@ p::selection {
 }
 
 header {
-    font-family:  'Kalinga', Arial,'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
+    font-family: 'Kalinga', Arial, 'Franklin Gothic Medium', 'Arial Narrow', sans-serif;
     font-size: 38px;
     background-image: url("img/header.jpg");
     background-position: right top;
@@ -66,7 +63,6 @@ header {
     color: rgb(255, 255, 255);
     width: 100%;
     height: 20vh;
-    
 }
 
 .oui {
@@ -79,12 +75,9 @@ header {
     width: 100%;
     height: 70vh;
 }
-strong::selection {
-    background-color: rgb(0, 0, 0);
-    color: rgb(255, 251, 10);
-}
 
-                                      /* Style du footer */
+/* Style du footer */
+
 footer {
     text-align: center;
 }
@@ -94,21 +87,22 @@ footer {
     align-items: center;
     justify-content: center;
     background-color: dimgray;
-    color: white; 
+    color: white;
     width: 100%;
     height: 10vh;
     order: 3;
 }
+
 .pied::selection {
     background-color: rgb(243, 228, 17);
     color: rgb(0, 0, 0);
 }
 
+/* Style de tout les lien sur la page */
 
-                                      /* Style de tout les lien sur la page */
 a:link {
-    color: rgb(255, 255, 255); 
-    background-color: transparent; 
+    color: rgb(255, 255, 255);
+    background-color: transparent;
     text-decoration: none;
 }
 
@@ -129,7 +123,18 @@ a:active {
     background-color: transparent;
     text-decoration: underline;
 }
+
 a::selection {
     color: white;
     background-color: black;
+}
+
+p::selection {
+    background-color: rgb(0, 0, 0);
+    color: white;
+}
+
+strong::selection {
+    background-color: rgb(0, 0, 0);
+    color: rgb(255, 251, 10);
 }
