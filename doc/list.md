@@ -52,15 +52,3 @@ void loop(){
   delay(3000);
 }
 ```
-
-## UNIX
-
-user ='pi'
-
-mdp ='raspberry' 'choubalabala5'
-
-## db
-
-user ='root'
-
-mdp ='unmotdepasse'
