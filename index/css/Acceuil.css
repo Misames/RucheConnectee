@@ -14,12 +14,6 @@ body {
     justify-content: space-around
 }
 
-.contenue {
-    width: 100%;
-}
-.article {
-    text-align: right;
-}
 .tablink {
     background-color: #555;
     color: white;
@@ -48,10 +42,8 @@ body {
 }
 
 #London {
-    background-color:aqua;
-    height: 100%;
-    display: flex;
-    flex-direction: column;
+    background-color: aqua;
+    height: 100vh;
 }
 
 #Paris {
