@@ -17,6 +17,24 @@
 </head>
 
 <body>
+        <?php
+        try
+        {
+              // On se connecte à MySQL
+            $bdd = new PDO('mysql:host=localhost;dbname=projetRuche;charset=utf8', 'root', '');
+        }
+        catch(Exception $e)
+        {
+              // En cas d'erreur, on affiche un message et on arrête tout
+                die('Erreur : '.$e->getMessage());
+        }
+        // Si tout va bien, on peut continuer
+        // On récupère tout le contenu de la table jeux_video
+        $reponse = $bdd->query('SELECT * FROM `Ruche` ORDER BY `id` DESC LIMIT 1');
+        // On affiche chaque entrée une à une
+        while ($donnees = $reponse->fetch())
+        {
+        ?>
     <div class="container">
         <button class="tablink" onclick="openCity('London', this, 'aqua')" id="defaultOpen">
             <img src="css/img/home.png" alt="Smiley face" height="42" width="42">
@@ -62,18 +80,29 @@
             <tbody>
                 <tr>
                     <th rowspan="1">Valeur actuel</th>
-                    <td colspan="1"></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
-                    <td></td>
+                    <td colspan="1"><?php echo $donnees['nb_abeille']; ?></td>
+                    <td><?php echo $donnees['mass_miel']; ?></td>
+                    <td><?php echo $donnees['temp_ext']; ?></td>
+                    <td><?php echo $donnees['temp_int']; ?></td>
+                    <td><?php echo $donnees['temp_max']; ?></td>
+                    <td><?php echo $donnees['temp_min']; ?></td>
+                    <td><?php echo $donnees['humi_int']; ?></td>
+                    <td><?php echo $donnees['humi_ext']; ?></td>
+                    <td><?php echo $donnees['humi_max']; ?></td>
+                    <td><?php echo $donnees['humi_min']; ?></td>
                 </tr>
             </tbody>
+            
+            <?php
+            }
+            $reponse->closeCursor(); // Termine le traitement de la requête
+            // toute les variable pour faire un système d'heure actuelle en GMT+2
+            $date = date("d-m-Y");  
+            $heure = date("G:i") + 2;
+            $minutes = date("i");
+            Print(" <p> La page a était actualiser pour la dernière fois le  $date à $heure h $minutes </p>");
+            ?>
+
         </table>
     </div>
 
@@ -86,7 +115,7 @@
         <h3>Oslo</h3>
         <p>Oslo is the capital of Norway.</p>
     </div>
-
+    
     <script>
         function openCity(cityName, elmnt, color) {
             var i, tabcontent, tablinks;
