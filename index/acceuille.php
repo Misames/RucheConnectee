@@ -60,7 +60,11 @@
             <h1> Les principes de notre Projet </h1>
             <p>Les principes de notre Projet sont de simplifier la vie de l'Apiculteur, mais aussi de préserver les Abeilles. Notre ruche sera reliée à un Smartphone via une Page Web, sur ce Smartphone, diverses informations seront indiquées, comme la Température, l'Humidité, le poids de miel fabriqué par les abeilles, ect.. De plus, nous mettons au point un système qui pourrait contrôler l'isolation</p>
         </div>
-        <div>
+        <div class="article">
+            <h1>Création de la Page Web</h1>
+            <p>Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone. </p>
+        </div>
+        <div class="article">
             <h1>Création de la Page Web</h1>
             <p>Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone. </p>
         </div>
@@ -139,7 +143,6 @@
             }
             document.getElementById(cityName).style.display = "block";
             elmnt.style.backgroundColor = color;
-
         }
         // Get the element with id="defaultOpen" and click on it
         document.getElementById("defaultOpen").click();
