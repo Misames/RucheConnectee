@@ -1,0 +1,11 @@
+GPU 0:
+    Product Name        : GeForce 8800 GTS 512
+    PCI Device/Vendor ID    : 60010de
+    PCI Location ID        : 0:4:0
+    Board Serial        : 125426475920
+    Display            : Connected
+    Temperature        : 61 C
+    Fan Speed        : 37%
+    Utilization
+        GPU            : 0%
+        Memory        : 0%
