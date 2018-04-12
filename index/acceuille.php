@@ -12,6 +12,7 @@
     <meta name="copyright" content="WiZaR xD">
     <title>Ruche connecté</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Acceuil.css" />
+    <link rel="stylesheet" type="text/css" media="screen" href="css/tab.css" />
     <link rel="icon" type="image/png" href="css/img/bee.png" />
     <script src="main.js"></script>
 </head>
@@ -47,16 +48,25 @@
         </button>
     </div>
     <div id="London" class="tabcontent contenue">
-        <h3>Home</h3>
-        <h5>La clef de notre avenir ?
-            <br>
-            <strong> abeilles en font parties !</strong>
-        </h5>
-        <img src="css/img/bee.png" alt="Smiley face" height="42" width="42">
+        <div class="header">
+            <h3>Home</h3>
+            <h5>La clef de notre avenir ?
+                <br>
+                <strong> abeilles en font parties !</strong>
+            </h5>
+            <img src="css/img/bee.png" alt="Smiley face" height="42" width="42">
+        </div>
+        <div class="article">
+            <h1> Les principes de notre Projet </h1>
+            <p>Les principes de notre Projet sont de simplifier la vie de l'Apiculteur, mais aussi de préserver les Abeilles. Notre ruche sera reliée à un Smartphone via une Page Web, sur ce Smartphone, diverses informations seront indiquées, comme la Température, l'Humidité, le poids de miel fabriqué par les abeilles, ect.. De plus, nous mettons au point un système qui pourrait contrôler l'isolation</p>
+        </div>
+        <div>
+            <h1>Création de la Page Web</h1>
+            <p>Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone. </p>
+        </div>
     </div>
     <div id="Paris" class="tabcontent">
-        <table summary="liste de quelques articles publiés
-            sur OpenWeb regroupés par auteurs (en ligne) et niveaux (en colonne)">
+        <table id="tableau" summary="Classement Blogspot par Wikio - Mai 2010">
 
             <caption>
                 état actuel de la ruche
