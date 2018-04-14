@@ -1,8 +1,9 @@
-CDC
-Câblages
-Cout
-Algorigramme (résumé le fonctionnement du code)
-Diagramme bloc interne et Algorigramme
+x CDC
+x Câblages
+x Cout
+x Algorigramme (résumé le fonctionnement du code)
+x Diagramme bloc interne et Algorigramme
+
 Programme commenté
 Procédure suivie (test, mesures)
 Conclusion (cahier des charges validés) 
