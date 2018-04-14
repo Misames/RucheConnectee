@@ -17,7 +17,7 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/Acceuil.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/tab.css" />
     <link rel="icon" type="image/png" href="css/img/bee.png" />
-    <script src="main.js"></script>
+    <script src="script/main.js"></script>
 </head>
 
 <body>
@@ -69,18 +69,20 @@
                 <h1> Les principes de notre Projet </h1>
                 <p>Les principes de notre Projet sont de simplifier la vie de l'Apiculteur, mais aussi de préserver les Abeilles.
                     Notre ruche sera reliée à un Smartphone via une Page Web, sur ce Smartphone, diverses informations seront
-                    indiquées, comme la Température, l'Humidité, le poids de miel fabriqué par les abeilles, ect.. De plus,
-                    nous mettons au point un système qui pourrait contrôler l'isolation</p>
+                    indiquées, comme la Température, l'Humidité, le poids de miel fabriqué par les abeilles.
+                </p>
             </div>
             <div class="article">
                 <h1>Création de la Page Web</h1>
-                <p>Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone.
-                    </p>
+                <p>
+                    Toutes les informations envoyés de la ruche sera transmit via une Page Web
+                </p>
             </div>
             <div class="article">
                 <h1>Création de la Page Web</h1>
-                <p>Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone.
-                    </p>
+                <p>
+                    Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone.
+                </p>
             </div>
         </div>
 
@@ -98,12 +100,12 @@
                         <th></th>
                         <th>Nombre d'abeilles</th>
                         <th>Masse de miel en Kg</th>
-                        <th>Température extérieur en °C</th>
-                        <th>température intérieur en °C</th>
-                        <th>température maximum en °C</th>
-                        <th>température minimum en °C</th>
-                        <th>Humidité intérieur en %</th>
-                        <th>Humidité extérieur en %</th>
+                        <th>Température extérieure en °C</th>
+                        <th>Température intérieure en °C</th>
+                        <th>Température maximum en °C</th>
+                        <th>Température minimum en °C</th>
+                        <th>Humidité intérieure en %</th>
+                        <th>Humidité extérieure en %</th>
                         <th>Humidité maximum en %</th>
                         <th>Humidité minimum en %</th>
                     </tr>
