@@ -121,7 +121,7 @@ while 1:
                     print('Mise a jour des valeurs fini.')
                     time.sleep(5)
                     compteur += 1
-                    print("Nombre de requete actuel = ", compteur ," le ", dateComplete)
+                    print("Nombre de requetes actuellles = ", compteur ," le ", dateComplete)
                     time.sleep(1)
             finally:
                 print('Finish.')
