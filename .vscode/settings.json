@@ -1,4 +1,11 @@
 {
     "javascript.nameSuggestions": true,
-    "editor.fontSize": 18
+    "editor.fontSize": 18,
+    "files.exclude": {
+        "**/.git": false,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true
+    }
 }
