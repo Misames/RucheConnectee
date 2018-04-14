@@ -9,7 +9,7 @@ import time
 
 fichier = open('test.txt',"r") # tu met un fichier txt au même endoirt que le script  avec le nom aa.txt
 for ligne in fichier:
-    if "PCI Location ID" in ligne:
+    if "Product Name" in ligne:
         line = ligne.split()
-        print("PCI Location ID :",line[-1])
+        print("Product Name :",line[-1])
         var = line[-1]

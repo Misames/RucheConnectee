@@ -52,7 +52,7 @@
             <h3>Home</h3>
             <h5>La clef de notre avenir ?
                 <br>
-                <strong> abeilles en font parties !</strong>
+                <strong> abeilles en font partie !</strong>
             </h5>
             <img src="css/img/bee.png" alt="Smiley face" height="42" width="42">
         </div>

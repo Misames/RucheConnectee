@@ -1,11 +1,12 @@
-GPU 0:
-    Product Name        : GeForce 8800 GTS 512
-    PCI Device/Vendor ID    : 60010de
-    PCI Location ID        : 0:4:0
-    Board Serial        : 125426475920
-    Display            : Connected
-    Temperature        : 61 C
-    Fan Speed        : 37%
-    Utilization
-        GPU            : 0%
-        Memory        : 0%
+nombre d'abeille =            10000
+masse de miel =               55 kg
+alerte =                      1
+temperature interieur =       22 °C
+temperature exterieur =       26 °C
+temperature minimum =       8 °C
+temperature maximum =       40 °C
+humiditer interieur =       10 %
+humiditer exterieur =       20 %
+humiditer minimum =       5 %
+humiditer maximum =       45 %
+fini
