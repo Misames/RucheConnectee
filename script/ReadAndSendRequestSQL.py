@@ -1,14 +1,14 @@
 #!/usr/bin/env python
 # -*- coding: latin-1 -*-
 
-# on import les fonctionnaliter et bibliothèque qu'on n'a besoin pour traiter les information
+# on import les fonctionnalités et bibliothèques qu'on n'a besoin pour traiter les informations
 
 import serial
 import sys
 import time
 import pymysql.cursors
 
-# Connexion à la base de données
+# Connexion à la base de donnés
 
 connection = pymysql.connect(host='localhost',
                              user='root',
@@ -16,6 +16,9 @@ connection = pymysql.connect(host='localhost',
                              db='ProjetRuche',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
+
+# initialisation des variables"
+
 nb_abeille = 10000
 message_alert = 0
 mass_miel = 00.00
@@ -28,19 +31,19 @@ humi_int = 00.00
 humi_min = 00.00
 humi_max = 00.00
 
-humiditer = 0
-
 compteur_serial = 0
 compteur = 0
-date = time.strftime("%d %H")
-# ser = serial.Serial( port='/dev/ttyACM0', baudrate = 9600) # fonction pour lire le port série
+
+date = time.strftime("%d %H") # fonction pour avoirs le jour actuel et l'heure
+ser = serial.Serial( port='/dev/ttyACM0', baudrate = 9600) # fonction pour lire le port série
 
 try:
     with connection.cursor() as cursor:
     
+        # création de la table 
         print("Verification ... faite a " , date)
         time.sleep(3)
-        sql = "CREATE TABLE IF NOT EXISTS `Ruche` (`id` int(255) NOT NULL AUTO_INCREMENT, `nb_abeille` int(255) COLLATE utf8_bin NOT NULL,`mass_miel` float(22) COLLATE utf8_bin NOT NULL,`message_alert` int(255) COLLATE utf8_bin NOT NULL, `temp_int` float(22) COLLATE utf8_bin NOT NULL, `temp_ext` float(22) COLLATE utf8_bin NOT NULL,`temp_min` float(22) COLLATE utf8_bin NOT NULL,`temp_max` float(22) COLLATE utf8_bin NOT NULL,`humi_int` float(22) COLLATE utf8_bin NOT NULL, `humi_ext` float(22) COLLATE utf8_bin NOT NULL,`humi_min` float(22) COLLATE utf8_bin NOT NULL,`humi_max` float(22) COLLATE utf8_bin NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1" #Partie 2 de la requête (Accumulation des requêtes)
+        sql = "CREATE TABLE IF NOT EXISTS `Ruche` (`id` int(255) NOT NULL AUTO_INCREMENT, `nb_abeille` int(255) COLLATE utf8_bin NOT NULL,`mass_miel` float(22) COLLATE utf8_bin NOT NULL,`message_alert` int(255) COLLATE utf8_bin NOT NULL, `temp_int` float(22) COLLATE utf8_bin NOT NULL, `temp_ext` float(22) COLLATE utf8_bin NOT NULL,`temp_min` float(22) COLLATE utf8_bin NOT NULL,`temp_max` float(22) COLLATE utf8_bin NOT NULL,`humi_int` float(22) COLLATE utf8_bin NOT NULL, `humi_ext` float(22) COLLATE utf8_bin NOT NULL,`humi_min` float(22) COLLATE utf8_bin NOT NULL,`humi_max` float(22) COLLATE utf8_bin NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1"
         cursor.execute(sql)
     
     connection.commit() #Commit
@@ -49,12 +52,9 @@ finally:
     print('Verification terminer.')
 
 while 1:
-    print('premier while')
     while compteur_serial == 0:
-            print('troisieme while')
-            fichier = open('test.txt',"r")
-            for ligne in fichier: # on lit ligne par ligne le port série
-                if "nombre d'abeille" in ligne: # si on  lit "Product Name" dans le fichier on le découpe mot par mot puis on prend la ligne qui nous intéresse 
+            for ligne in ser: # on lit ligne par ligne le port série
+                if "nombre d'abeille" in ligne: # si on  lit "nombre d'abeille" dans le port série on le découpe mot par mot puis on prend la ligne qui nous intéresse 
                     line = ligne.split()
                     print("nombre d'abeille =",line[-1])
                     nb_abeille = line[-1]
@@ -105,7 +105,7 @@ while 1:
                     date = time.strftime("%d %H")
                     dateComplete = time.strftime("%A %d %B %Y %H:%M:%S")
                     
-                    if date == '31 02':   # reset de la base de donnée le 31 du mois à 2h et pendant une heure fait une maintenance
+                    if date == '31 02':   # reset de la base de donnée le 31 du mois à 2h du matin et pendant une heure bloc le système
                         sql = "TRUNCATE TABLE `Ruche`"
                         cursor.execute(sql) #Execution
                         print("Table purger a ", date)
@@ -114,6 +114,7 @@ while 1:
                         compteur = 0
                         connection.commit() #Commit
                         
+                    # On execute une requêtes SQL pour ajouter des données à la BDD
                     sql = "INSERT INTO `Ruche` (`nb_abeille`, `mass_miel`, `message_alert`,  `temp_int`, `temp_ext`, `temp_min`, `temp_max` , `humi_int`, `humi_ext`, `humi_min`, `humi_max`) VALUES (%s, %s, %s, %s, %s, %s, %s, %s ,%s, %s, %s)" # requête SQL pour mettre à jour la base de données après la Création et purge de celci juste avant si la condition est vérifé
                     cursor.execute(sql, (nb_abeille, mass_miel, message_alert, temp_int, temp_ext, temp_min, temp_max, humi_int, humi_ext, humi_min, humi_max)) #Execution
                     connection.commit() #Commit

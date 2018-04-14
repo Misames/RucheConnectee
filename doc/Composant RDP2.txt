@@ -5,9 +5,7 @@ Algorigramme (résumé le fonctionnement du code)
 Diagramme bloc interne et Algorigramme
 Programme commenté
 Procédure suivie (test, mesures)
-Conclusion (cahier des charges validés)
-
-lire le port serie x) 
+Conclusion (cahier des charges validés) 
 
 Faire un site web responcive sans faille XSS et resfresh avec de l'ajax 
 
