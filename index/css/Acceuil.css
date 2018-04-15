@@ -1,5 +1,5 @@
 body {
-    font-family: "Lato", sans-serif;
+    font-family: "Roboto", sans-serif;
     margin: 0px;
     padding: 0px;
     display: flex;
@@ -7,11 +7,13 @@ body {
     flex-wrap: wrap;
 }
 
+/* Header */ 
+
 .container {
-    width: 100%;
     height: 10vh;
+    width: 100%;
     display: flex;
-    justify-content: space-around
+    justify-content: space-around;
 }
 
 .tablink {
@@ -33,25 +35,34 @@ body {
 /* Style the tab content */
 
 .tabcontent {
+
+}
+
+#London {
+    background-color: aqua;
     color: rgb(0, 0, 0);
     display: none;
     padding: 50px;
     text-align: center;
     width: 100%;
-    height: 100vh;
-}
-
-#London {
-    background-color: aqua;
-    height: 100vh;
+    height: 100%;
 }
 
 #Paris {
     background-color: gold;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
 }
 
 #Tokyo {
-    background-color: blue;
+    background-color: burlywood !important;
+    background-image: url("img/404.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    width: 100%;
+    text-align: center;
 }
 
 #Oslo {

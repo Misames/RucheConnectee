@@ -17,7 +17,6 @@
     <link rel="stylesheet" type="text/css" media="screen" href="css/Acceuil.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/tab.css" />
     <link rel="icon" type="image/png" href="css/img/bee.png" />
-    <script src="script/main.js"></script>
 </head>
 
 <body>
@@ -25,7 +24,7 @@
         try
         {
               // On se connecte à MySQL
-            $bdd = new PDO('mysql:host=localhost;dbname=projetRuche;charset=utf8', 'root', '');
+            $bdd = new PDO('mysql:host=localhost;dbname=projetruche;charset=utf8', 'root', '');
         }
         catch(Exception $e)
         {
@@ -49,7 +48,7 @@
             <button class="tablink" onclick="openCity('Paris', this, 'gold')">
                 <img src="css/img/columns.png" alt="Smiley face" height="42" width="42">
             </button>
-            <button class="tablink" onclick="openCity('Tokyo', this, 'blue')">
+            <button class="tablink" onclick="openCity('Tokyo', this, 'burlywood')">
                 <img src="css/img/history-clock-button.png" alt="Smiley face" height="42" width="42">
             </button>
         </div>
@@ -79,9 +78,9 @@
                 </p>
             </div>
             <div class="article">
-                <h1>Création de la Page Web</h1>
+                <h1>Les abeilles, c'est essentiel !</h1>
                 <p>
-                    Toutes les informations envoyés de la ruche sera transmit via une Page Web, externe à ce site sur un Smartphone.
+                    Les abeilles représentent environ 80% de la pollinisation. CelleS-ci sont indispensableS à notre Écosystème et à notre Écologie. Elles constituent notre environnement actuel. En cas de disparition de ces pollinisateurs, il n'y aurait pas de production de graines ou de fruits essentiels à notre alimentation.
                 </p>
             </div>
         </div>
@@ -89,58 +88,77 @@
         <!--Onglet du tableau-->
 
         <div id="Paris" class="tabcontent">
-            <table id="tableau" summary="Classement Blogspot par Wikio - Mai 2010">
-
-                <caption>
-                    état actuel de la ruche
-                </caption>
-
+            <table id="tableau" summary="état de la Ruche">
                 <thead>
                     <tr>
                         <th></th>
-                        <th>Nombre d'abeilles</th>
-                        <th>Masse de miel en Kg</th>
-                        <th>Température extérieure en °C</th>
-                        <th>Température intérieure en °C</th>
-                        <th>Température maximum en °C</th>
-                        <th>Température minimum en °C</th>
-                        <th>Humidité intérieure en %</th>
-                        <th>Humidité extérieure en %</th>
-                        <th>Humidité maximum en %</th>
-                        <th>Humidité minimum en %</th>
+                        <th>Valeurs</th>
                     </tr>
                 </thead>
                 <tbody>
                     <tr>
                         <th rowspan="1">Valeur actuel</th>
                         <td colspan="1">
+                            
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Nombre d'abeilles</th>
+                        <td colspan="1">
                             <?php echo $donnees['nb_abeille']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Masse de miel en Kg</th>
+                        <td colspan="1">
                             <?php echo $donnees['mass_miel']; ?>
                         </td>
-                        <td>
-                            <?php echo $donnees['temp_ext']; ?>
-                        </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Température extérieure en °C</th>
+                        <td colspan="1">
                             <?php echo $donnees['temp_int']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Température intérieure en °C</th>
+                        <td colspan="1">
+                            <?php echo $donnees['temp_ext']; ?>
+                        </td>
+                    </tr>
+                    <tr>
+                        <th>Température maximum en °C</th>
+                        <td colspan="1">
                             <?php echo $donnees['temp_max']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Température minimum en °C</th>
+                        <td colspan="1">
                             <?php echo $donnees['temp_min']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Humidité intérieure en %</th>
+                        <td colspan="1">
                             <?php echo $donnees['humi_int']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Humidité extérieure en %</th>
+                        <td colspan="1">
                             <?php echo $donnees['humi_ext']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Humidité maximum en %</th>
+                        <td colspan="1">
                             <?php echo $donnees['humi_max']; ?>
                         </td>
-                        <td>
+                    </tr>
+                    <tr>
+                        <th>Humidité minimum en %</th>
+                        <td colspan="1">
                             <?php echo $donnees['humi_min']; ?>
                         </td>
                     </tr>
@@ -164,8 +182,8 @@
         <!--Onglet de l'historique des données-->
         
         <div id="Tokyo" class="tabcontent">
-            <h3>Tokyo</h3>
-            <p>Tokyo is the capital of Japan.</p>
+            <h3>historique</h3>
+            <p>Aucunes données trouver ...</p>
         </div>
 
         <div id="Oslo" class="tabcontent">
