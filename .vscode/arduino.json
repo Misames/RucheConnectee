@@ -1,3 +1,4 @@
 {
-    "port": "COM1"
+    "port": "COM1",
+    "board": "arduino:avr:unowifi"
 }

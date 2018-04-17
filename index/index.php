@@ -3,7 +3,7 @@
 
 <head>
 
-    <!-- liste de toute les meta plus lien des image et ichier css-->
+    <!-- liste de toute les meta plus lien des images et fichier css-->
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
