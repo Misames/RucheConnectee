@@ -13,7 +13,7 @@ import pymysql.cursors
 connection = pymysql.connect(host='localhost',
                              user='root',
                              password='',
-                             db='ProjetRuche',
+                             db='projetRuche',
                              charset='utf8mb4',
                              cursorclass=pymysql.cursors.DictCursor)
 
@@ -35,13 +35,14 @@ compteur_serial = 0
 compteur = 0
 
 date = time.strftime("%d %H") # fonction pour avoir le jour actuel et l'heure
-ser = serial.Serial( port='/dev/ttyACM0', baudrate = 9600) # fonction pour lire le port série
-
+# ser = serial.Serial( port='/dev/ttyACM0', baudrate = 9600) # fonction pour lire le port série
+mon_fichier = open("test.txt", "r") # fichier de test
 try:
     with connection.cursor() as cursor:
     
         # création de la table 
         print("Verification ... fait a " , date)
+
         time.sleep(3)
         sql = "CREATE TABLE IF NOT EXISTS `Ruche` (`id` int(255) NOT NULL AUTO_INCREMENT, `nb_abeille` int(255) COLLATE utf8_bin NOT NULL,`mass_miel` float(22) COLLATE utf8_bin NOT NULL,`message_alert` int(255) COLLATE utf8_bin NOT NULL, `temp_int` float(22) COLLATE utf8_bin NOT NULL, `temp_ext` float(22) COLLATE utf8_bin NOT NULL,`temp_min` float(22) COLLATE utf8_bin NOT NULL,`temp_max` float(22) COLLATE utf8_bin NOT NULL,`humi_int` float(22) COLLATE utf8_bin NOT NULL, `humi_ext` float(22) COLLATE utf8_bin NOT NULL,`humi_min` float(22) COLLATE utf8_bin NOT NULL,`humi_max` float(22) COLLATE utf8_bin NOT NULL, PRIMARY KEY (`id`)) ENGINE=InnoDB DEFAULT CHARSET=utf8 COLLATE=utf8_bin AUTO_INCREMENT=1"
         cursor.execute(sql)
@@ -53,7 +54,7 @@ finally:
 
 while 1:
     while compteur_serial == 0:
-            for ligne in ser: # on lit ligne par ligne le port série
+            for ligne in mon_fichier: # on lit ligne par ligne le port série
                 if "nombre d'abeille" in ligne: # si on  lit "nombre d'abeille" dans le port série on le découpe mot par mot puis on prend la ligne qui nous intéresse 
                     line = ligne.split()
                     print("nombre d'abeille =",line[-1])
@@ -100,6 +101,8 @@ while 1:
                     humi_max = line[-2]
                 if "fini" in ligne: 
                     compteur_serial = 1
+                    print("Fin de la lecture.")
+                    break
             try:
                 with connection.cursor() as cursor:
                     date = time.strftime("%d %H")

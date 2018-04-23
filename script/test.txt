@@ -1,12 +1,12 @@
-nombre d'abeille =            10000
-masse de miel =               55 kg
+nombre d'abeille =            6051
+masse de miel =               20 kg
 alerte =                      1
-temperature interieure =       22 °C
-temperature exterieure =       26 °C
-temperature minimum =       8 °C
-temperature maximum =       40 °C
-humidite interieure =       10 %
-humidite exterieure =       20 %
-humidite minimum =       5 %
-humidite maximum =       45 %
+temperature interieure =       22.66 °C
+temperature exterieure =       26.96 °C
+temperature minimum =       8.22 °C
+temperature maximum =       48 °C
+humidite interieure =       20 %
+humidite exterieure =       30 %
+humidite minimum =       15 %
+humidite maximum =       65 %
 fini
