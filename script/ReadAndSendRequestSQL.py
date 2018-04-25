@@ -108,7 +108,7 @@ while 1:
                     date = time.strftime("%d %H")
                     dateComplete = time.strftime("%A %d %B %Y %H:%M:%S")
                     
-                    if date == '31 02':   # reset de la base de données le 31 du mois à 2h du matin et pendant une heure bloc le système
+                    if date == '30 02':   # reset de la base de données le 31 du mois à 2h du matin et pendant une heure bloc le système
                         sql = "TRUNCATE TABLE `Ruche`"
                         cursor.execute(sql) #Execution
                         print("Table purgee a ", date)
