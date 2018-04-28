@@ -88,7 +88,7 @@
         <!--Tab of the table-->
 
         <div id="Paris" class="tabcontent">
-            <table id="tableau" summary="état de la Ruche">
+            <table id="tableau" summary="table of the beehouse">
                 <thead>
                 </thead>
                 <tbody>
