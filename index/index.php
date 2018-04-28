@@ -1,19 +1,19 @@
 <!DOCTYPE html>
-<html lang="fr">
+<html lang="en">
 
 <head>
 
-    <!-- liste de toute les meta plus lien des images et fichier css-->
+    <!--list of all meta plus link images and file css-->
 
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="author" content="François">
     <meta name="description" content="Site web conçus pour un apiculteur.">
-    <meta name="keywords" lang="fr" content="abeilles, ruche, historique">
+    <meta name="keywords" lang="fr" content="abeilles, beehouse, historique">
     <meta name="reply-to" content="francois.bouscaillou@gmail.com">
-    <meta name="copyright" content="WiZaR xD">
-    <title>Ruche connecté</title>
+    <meta name="copyright" content="François">
+    <title>Connected beehouse</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Acceuil.css" />
     <link rel="stylesheet" type="text/css" media="screen" href="css/tab.css" />
     <link rel="icon" type="image/png" href="css/img/bee.png" />
@@ -23,18 +23,18 @@
     <?php
         try
         {
-              // On se connecte à MySQL
+              // We connect to MySQL
             $bdd = new PDO('mysql:host=localhost;dbname=projetruche;charset=utf8', 'root', '');
         }
         catch(Exception $e)
         {
-              // En cas d'erreur, on affiche un message et on arrête tout
+              // In case of error, we display a message and stop all
                 die('Erreur : '.$e->getMessage());
         }
-        // Si tout va bien, on peut continuer
-        // On récupère tout le contenu de la table jeux_video
+        // If all goes well, we can continue
+        // We recover all the contents of the table Ruche
         $reponse = $bdd->query('SELECT * FROM `Ruche` ORDER BY `id` DESC LIMIT 1');
-        // On affiche chaque entrée une à une
+        // We display each entry one by one
         while ($donnees = $reponse->fetch())
         {
         ?>
@@ -53,111 +53,101 @@
             </button>
         </div>
 
-        <!--Onglet de l'acceuil-->
+        <!--Home tab-->
 
         <div id="London" class="tabcontent contenue">
             <div class="header">
                 <h3>Home</h3>
-                <h5>La clef de notre avenir ?
+                <h5>The key to our future?
                     <br>
-                    <strong> abeilles en font partie !</strong>
+                    <strong>Bees are part of it!</strong>
                 </h5>
                 <img src="css/img/bee.png" alt="Smiley face" height="42" width="42">
             </div>
             <div class="article">
-                <h1> Les principes de notre Projet </h1>
-                <p>Les principes de notre Projet sont de simplifier la vie de l'Apiculteur, mais aussi de préserver les Abeilles.
-                    Notre ruche sera reliée à un Smartphone via une Page Web, sur ce Smartphone, diverses informations seront
-                    indiquées, comme la Température, l'Humidité, le poids de miel fabriqué par les abeilles.
+                <h1>The principles of our Project</h1>
+                <p>The principles of our project are to simplify the life of the beekeeper, but also to preserve bees.
+                    Our hive will be connected to a Smartphone via a Web Page, on this Smartphone, various information will be
+                    indicated, such as Temperature, Humidity, honey weight made by bees.
                 </p>
             </div>
             <div class="article">
-                <h1>Création de la Page Web</h1>
+                <h1>Creating the Web Page</h1>
                 <p>
-                    Toutes les informations envoyés de la ruche sera transmit via une Page Web
+                    All information sent from the hive will be transmitted via a Web Page
                 </p>
             </div>
             <div class="article">
-                <h1>Les abeilles, c'est essentiel !</h1>
+                <h1>Bees are essential!</h1>
                 <p>
-                    Les abeilles représentent environ 80% de la pollinisation. CelleS-ci sont indispensableS à notre Écosystème et à notre Écologie. Elles constituent notre environnement actuel. En cas de disparition de ces pollinisateurs, il n'y aurait pas de production de graines ou de fruits essentiels à notre alimentation.
+                    Bees make up about 80% of the pollination. These are essential to our Ecosystem and Ecology. They are our current environment. If these pollinators disappear, there will be no production of seeds or fruits essential to our diet.
                 </p>
             </div>
         </div>
 
-        <!--Onglet du tableau-->
+        <!--Tab of the table-->
 
         <div id="Paris" class="tabcontent">
             <table id="tableau" summary="état de la Ruche">
                 <thead>
-                    <tr>
-                        <th></th>
-                        <th>Valeurs</th>
-                    </tr>
                 </thead>
                 <tbody>
                     <tr>
-                        <th rowspan="1">Valeur actuel</th>
-                        <td colspan="1">
-                            
-                        </td>
-                    </tr>
-                    <tr>
-                        <th>Nombre d'abeilles</th>
+                        <th>Number of bees</th>
                         <td colspan="1">
                             <?php echo $donnees['nb_abeille']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Masse de miel en Kg</th>
+                        <th>Mass of honey in Kg</th>
                         <td colspan="1">
                             <?php echo $donnees['mass_miel']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Température extérieure en °C</th>
+                        <th>Temperature outside in °C</th>
                         <td colspan="1">
                             <?php echo $donnees['temp_int']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Température intérieure en °C</th>
+                        <th>Temperature outside in °C</th>
                         <td colspan="1">
                             <?php echo $donnees['temp_ext']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Température maximum en °C</th>
+                        <th>Temperature maximum in °C</th>
                         <td colspan="1">
                             <?php echo $donnees['temp_max']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Température minimum en °C</th>
+                        <th>Temperature minimum in °C</th>
                         <td colspan="1">
                             <?php echo $donnees['temp_min']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Humidité intérieure en %</th>
+                        <th>Humidity inside in %</th>
                         <td colspan="1">
                             <?php echo $donnees['humi_int']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Humidité extérieure en %</th>
+                        <th>Humidity outside %</th>
                         <td colspan="1">
                             <?php echo $donnees['humi_ext']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Humidité maximum en %</th>
+                        <th>Humidity maximum in %</th>
                         <td colspan="1">
                             <?php echo $donnees['humi_max']; ?>
                         </td>
                     </tr>
                     <tr>
-                        <th>Humidité minimum en %</th>
+                        <th>Humidity minimum in %</th>
                         <td colspan="1">
                             <?php echo $donnees['humi_min']; ?>
                         </td>
@@ -166,32 +156,27 @@
 
                 <?php
             }
-            $reponse->closeCursor(); // Termine le traitement de la requête
+            $reponse->closeCursor(); // Finish processing the request
             
-            // toute les variables pour faire un système d'heure actuelle en GMT+2
+            // all the variables to make a system at the moment in GMT +2
             
             $date = date("d-m-Y");  
             $heure = date("G:i") + 2;
             $minutes = date("i");
-            Print(" <p> La page a était actualiser pour la dernière fois le  $date à $heure h $minutes </p>");
+            Print(" <p> The page was last refreshed on  $date at $heure h $minutes </p>");
             ?>
 
             </table>
         </div>
 
-        <!--Onglet de l'historique des données-->
+        <!--Data History Tab-->
         
         <div id="Tokyo" class="tabcontent">
-            <h3>historique</h3>
-            <p>Aucunes données trouver ...</p>
+            <h3>history</h3>
+            <p>No data found...</p>
         </div>
 
-        <div id="Oslo" class="tabcontent">
-            <h3>Oslo</h3>
-            <p>Oslo is the capital of Norway.</p>
-        </div>
-
-        <script> // script pour changer le style en fonction du clic de l'utilisateur
+        <script> // script to change the style according to the user's click
             function openCity(cityName, elmnt, color) {
                 var i, tabcontent, tablinks;
                 tabcontent = document.getElementsByClassName("tabcontent");
@@ -208,7 +193,5 @@
             // Get the element with id="defaultOpen" and click on it
             document.getElementById("defaultOpen").click();
         </script>
-
 </body>
-
 </html>

@@ -12,3 +12,23 @@ Faire un site web responcive avec nom de domaine et https sans faille XSS et res
 
 hotspot WIFI avec portail captif à la connection sur le serveur web à
 une page d'acceuille
+
+Anglais
+
+Tu commences avec page d'accueil
+Cahier des charges
+Algorigramme
+Programme
+Résultats tests
+Conclusion
+
+N°3
+
+Acceuil, ( faire jolie )
+bref présentation du projet, ( tout les compôsant utiliser )
+cahier des charges, diagrammes, ( le problème de base )
+présentation des solutions, ( pourquoi tout ça et pas autres choses)
+et solutions adoptés. ( pourquoi raspberry et pas les autres )
+Programme, ( code py et php avec com )
+test et résultats, ( preuve du script syncro avec le site )
+conclusion. ( quesqui marche )

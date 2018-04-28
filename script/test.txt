@@ -1,12 +1,12 @@
-nombre d'abeille =            14
-masse de miel =               22 kg
-alerte =                      1
-temperature interieure =       22.66 °C
-temperature exterieure =       26.96 °C
-temperature minimum =       8.22 °C
-temperature maximum =       36.54 °C
-humidite interieure =       55.22 %
-humidite exterieure =       40 %
-humidite minimum =       14 %
-humidite maximum =       55 %
-fini
+number of bees =        14
+honey mass =            22 kg
+alerte =                1
+temperature inside =    22.66 °C
+temperature outside =   26.96 °C
+temperature minimum =    8.22 °C
+temperature maximum =   36.54 °C
+humidity inside =       55.22 %
+humidity outside =         40 %
+humidity minimum =         14 %
+humidity maximum =         55 %
+finish
