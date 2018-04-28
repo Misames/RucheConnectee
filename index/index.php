@@ -105,7 +105,7 @@
                         </td>
                     </tr>
                     <tr>
-                        <th>Temperature outside in °C</th>
+                        <th>Temperature inside in °C</th>
                         <td colspan="1">
                             <?php echo $donnees['temp_int']; ?>
                         </td>
