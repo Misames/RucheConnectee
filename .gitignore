@@ -1,5 +1,5 @@
 *.git
-.vscode
+*.vscode
 resume.png
 structure.png
 log.md
