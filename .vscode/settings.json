@@ -6,6 +6,7 @@
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
+        "**/.JSON": true,
         "**/.DS_Store": true
     }
 }

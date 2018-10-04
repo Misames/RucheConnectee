@@ -29,6 +29,3 @@
 ### HTML/CSS
 
 ### JavaScript
-
-<img src="resume.png"/>
-<img src="structure.png"/>

@@ -11,7 +11,7 @@
     <meta name="author" content="François">
     <meta name="description" content="Site web conçus pour un apiculteur.">
     <meta name="keywords" lang="fr" content="abeilles, beehouse, historique">
-    <meta name="reply-to" content="francois.bouscaillou@gmail.com">
+    <meta name="reply-to" content="xxx@gmail.com">
     <meta name="copyright" content="François">
     <title>Connected beehouse</title>
     <link rel="stylesheet" type="text/css" media="screen" href="css/Acceuil.css" />
