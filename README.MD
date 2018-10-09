@@ -2,7 +2,7 @@
 
 ## Objectif
 
-    Réalisez pour un apiculteur une ruche connectée pour la surveillance de celci.
+    Réalisez pour un apiculteur une ruche connectée pour la surveillance des abeilles et de sa production.
 
 ## **Matériels utilisé pour faire le serveur**
 
@@ -13,12 +13,19 @@
     -Carte SD 8Go
     -Alimentation 5V 2A
 
+## **Logiciels et services**
+
+    Serveur Web (Lamp)
+    Serveur DHCP
+    Serveur SSH
+    RaspAP (Hotspot WIFI)
+
 ## **Langage utilisés**
 
 ## **Backend**
 
-    Python
-    PHP
+    Python 3.7
+    PHP 7.2.10
 
 ## **Frontend**
 
