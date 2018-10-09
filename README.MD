@@ -1,8 +1,10 @@
-# Ruche Connectée
+# Ruche Connectée Partie Serveur et IHM
 
 ## Objectif
 
     Réalisez pour un apiculteur une ruche connectée pour la surveillance des abeilles et de sa production.
+
+    Pour ma Part je devais réaliser l'affichage sur un terminal mobile, en local de la ruche les informations provenant de la ruche.
 
 ## **Matériels utilisé pour faire le serveur**
 
