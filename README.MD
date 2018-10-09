@@ -1,31 +1,26 @@
-# RucheBac2018
+# Ruche Connectée
 
 ## Objectif
 
+    Réalisez pour un apiculteur une ruche connectée pour la surveillance de celci.
+
 ## **Matériels utilisé pour faire le serveur**
 
-## -capteur t°/humidité/mas
-
-## -module GSM
-
-## -Arduinos (Mega ou uno)
-
-## -Raspberry PI 3 (sous raspbian)
-
-## -Carte SD 8Go
-
-## -Alimentation 5V 2A (conseiller)
+    -Capteur de t°/humidité/masse
+    -Module GSM
+    -Arduinos Mega
+    -Raspberry PI 3 (Raspbian OS)
+    -Carte SD 8Go
+    -Alimentation 5V 2A
 
 ## **Langage utilisés**
 
 ## **Backend**
 
-### Python
-
-### PHP
+    Python
+    PHP
 
 ## **Frontend**
 
-### HTML/CSS
-
-### JavaScript
+    HTML/CSS
+    JavaScript
