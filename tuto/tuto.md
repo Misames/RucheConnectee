@@ -17,7 +17,8 @@ je vous recommande de regarder les tutos indiquer pour savoir quelle commande ut
         5) Il faudra installer pour mon projet la librairie
         'pymysql'(Pour faire des reqquête SQL dans le script) et
         'Serial'(Pour communiquer avec l'arduino par USB)
-    - Quand vous auraient fini d'installer tout les outils. Vous pouraient commencer à developper votre script ou votre site web  
+    - Quand vous auraient fini d'installer tout les outils.
+    Vous pouraient commencer à developper votre script ou votre site web  
 
 | **Logiciel** |
 |---|
