@@ -31,13 +31,13 @@ je vous recommande de regarder les tutos indiquer pour savoir quelle commande ut
 [HotSpot Wifi](https://www.google.fr/search?q=hotspot+wifi+raspberry&rlz=1C1CHBF_frFR810FR811&oq=hotspot+wifi+&aqs=chrome.0.69i59j0j69i57j0l3.5718j0j7&sourceid=chrome&ie=UTF-8) avec le [tuto](https://raspbian-france.fr/creer-un-hotspot-wi-fi-en-moins-de-10-minutes-avec-la-raspberry-pi/)
 
 | **Commandes Linux** | **Description** |
-|---| --- |  
+|---| --- |
 | `sudo su` | Donne tout les droits admin quand on est connecté |
-| `aptitude-update`| lance le télécgarement de toutes les mis à jour
-| `aptitude-upgrade`| lance l'installation de toute les mise à jour
-| `apt-update`| lance le télécgarement de toutes les mis à jour
-| `apt-upgrade`| lance l'installation de toute les mise à jour
-| `apt-get 'nom d'un logiciel'`| commande pour installer un logiciel dans le repo distant de debian|
+| `aptitude-update`| lance le télécgarement de toutes les mis à jour |
+| `aptitude-upgrade`| lance l'installation de toute les mise à jour |
+| `apt-update`| lance le télécgarement de toutes les mis à jour |
+| `apt-upgrade`| lance l'installation de toute les mise à jour |
+| `apt-get 'nom d'un logiciel'`| commande pour installer un logiciel dans le repo distant de debian |
 
 ## Liste des outils
 
