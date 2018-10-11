@@ -2,12 +2,12 @@
     "javascript.nameSuggestions": true,
     "editor.fontSize": 18,
     "files.exclude": {
-        "**/.git": false,
+        "**/.git": true,
         "**/.svn": true,
         "**/.hg": true,
         "**/CVS": true,
-        "**/.JSON": true,
-        "**/.PNG": true,
+        "**/.vscode": true,
+        "**/UML": true,
         "**/.DS_Store": true
     }
 }

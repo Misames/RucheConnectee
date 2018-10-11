@@ -1,8 +1,6 @@
 # Compiled source #
 ###################
 
-*/.vscode
-*.json
 *.com
 *.class
 *.dll
@@ -22,6 +20,7 @@
 *.rar
 *.tar
 *.zip
+.vscode
 
 # Logs and databases #
 ######################
