@@ -42,7 +42,7 @@ je vous recommande de regarder les tutos indiquer pour savoir quelle commande ut
 ## Liste des outils
 
 | **Nom** | **Type** | **Description** |
-| --- | :---: | :---: | --- |
+| --- | :---: | :---: |
 | `Raspbian` | `OS` | `Système d'exploitation sur la machine sous LINUX basé sur Bash` |
 | `Apache` | `Serveur HTTP` | `le serveur web` |
 | `MySQL` | `SGBD` | `Système de gestion de base de données` |
