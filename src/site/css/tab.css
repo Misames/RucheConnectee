@@ -1,0 +1,36 @@
+
+/* Style du tableau */
+
+#tableau {
+    font-family: "Roboto", "Lucida Grande", Sans-Serif;
+    font-size: 18px;
+    margin: 10px 0;
+    width: 100%;
+    text-align: left;
+    border-collapse: collapse;
+}
+#tableau th {
+    font-size: 13px;
+    font-weight: normal;
+    padding: 8px;
+    background-image: linear-gradient(gold, goldenrod);
+    border: 1px solid black;
+}
+#tableau td {
+    background-color: #fff;
+    padding: 8px;
+    border: 1px solid black;
+}
+#tableau tfoot tr td {
+    font-size: 16px;
+    text-align:center;
+}
+#tableau tbody tr:hover td {
+    background-image: linear-gradient(gold,goldenrod);
+}
+#tableau a:hover {
+    text-decoration:underline;
+}
+tr {
+    border-top: 3px solid black;
+}
