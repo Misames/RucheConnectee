@@ -1,34 +1,36 @@
-# RucheBac2018
+# Ruche Connectée Partie Serveur et IHM
 
 ## Objectif
 
+    Réalisez pour un apiculteur une ruche connectée pour la surveillance des abeilles et de sa production.
+
+    Pour ma Part je devais réaliser l'affichage sur un terminal mobile, en local de la ruche les
+    informations provenant de la ruche.
+
 ## **Matériels utilisé pour faire le serveur**
 
-## -capteur t°/humidité/mas
+    -Capteur de t°/humidité/masse
+    -Module GSM
+    -Arduinos Mega
+    -Raspberry PI 3 (Raspbian OS)
+    -Carte SD 8Go
+    -Alimentation 5V 2A
 
-## -module GSM
+## **Logiciels et services**
 
-## -Arduinos (Mega ou uno)
-
-## -Raspberry PI 3 (sous raspbian)
-
-## -Carte SD 8Go
-
-## -Alimentation 5V 2A (conseiller)
+    Serveur Web (Lamp)
+    Serveur DHCP
+    Serveur SSH
+    RaspAP (Hotspot WIFI)
 
 ## **Langage utilisés**
 
 ## **Backend**
 
-### Python
-
-### PHP
+    Python 3.7
+    PHP 7.2.10
 
 ## **Frontend**
 
-### HTML/CSS
-
-### JavaScript
-
-<img src="resume.png"/>
-<img src="structure.png"/>
+    HTML/CSS
+    JavaScript
