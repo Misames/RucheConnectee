@@ -57,3 +57,12 @@ je vous recommande de regarder les tutos indiquer pour savoir quelle commande ut
 | `VNC` | `Service` | `Protocole de control à distance image en direct du pc sous control` |
 | `RaspAP` | `Service` | `outil pour administré un hotspot WiFI` |
 | `Vi ou VIM ou Nano` | `Editeur de texte` | `ce son des editeur de text dans l'invite de commande donc pas d'interface graphique` |
+
+
+## Dépendances
+
+* **PyMySQL**
+
+* **Serial**
+
+* `$ pip install serial pymysql`
