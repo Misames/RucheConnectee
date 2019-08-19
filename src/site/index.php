@@ -1,10 +1,9 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="fr">
 
 <head>
 
     <!--list of all meta plus link images and file css-->
-
     <meta charset="utf-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -163,7 +162,7 @@
             $date = date("d-m-Y");  
             $heure = date("G:i") + 2;
             $minutes = date("i");
-            Print(" <p> The page was last refreshed on  $date at $heure h $minutes </p>");
+            Print("<p> The page was last refreshed on $date at $heure h $minutes </p>");
             ?>
 
             </table>
