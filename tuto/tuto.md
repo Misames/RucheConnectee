@@ -2,26 +2,26 @@
 
 ## Préambule
 
-je vous conseille de vous renseigner sur tout les outils commme linux avec toute les commande plus les editeurs de texte et apprendre Les langages SQL, Python et php
+je vous conseille de vous renseigner sur tout les outils commme linux avec toute les commandes plus les editeurs de texte et apprendre Les langages SQL, Python, php et JavaScript
 
-je vous recommande de regarder les tutos indiquer pour savoir quelle commande utiliser
+je vous recommande de regarder les tutos indiqués pour savoir quelle commande utiliser
 
     - Se munir de tout le matériel minimum
-    - installation de tout les outils
-        1) Etcher
-        2) Crée la Carte SD bootable
+    - Procédure d'installation de tout les outils
+        1) avoir Etcher
+        2) Crée la Carte SD bootable avec etcher
         3) mettre la Carte SD et Lancé le raspberry
         4) Configurer l'OS, le mettre à jour, et installer les
-        outil qui permetrons de developper avec 'apt get install'
-        apache2, mysql, php, phpmyadmin, python, raspAP, vim.
-        5) Il faudra installer pour mon projet la librairie
+        outils qui permetrons de developper avec `apt get install`
+        apache2, mysql, php, phpmyadmin, python, raspAP.
+        5) Il faudra installer pour mon projet la librairie Python :
         'pymysql'(Pour faire des reqquête SQL dans le script) et
         'Serial'(Pour communiquer avec l'arduino par USB)
     - Quand vous auraient fini d'installer tout les outils.
     pip
     pyserial
     pymysql
-    Vous pouraient commencer à developper votre script ou votre site web  
+    Vous pouraient commencer à developper votre script ou votre site web
 
 | **Logiciel** |
 |---|
